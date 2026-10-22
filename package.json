@@ -1,0 +1,26 @@
+{
+  "name": "frota-fenix-resiliente",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "node -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariaflaviasilvasilva-alt/frota-fenix-resiliente.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mariaflaviasilvasilva-alt/frota-fenix-resiliente/issues"
+  },
+  "homepage": "https://github.com/mariaflaviasilvasilva-alt/frota-fenix-resiliente#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
