@@ -1,0 +1,34 @@
+=======================================
+Auditoria De Telemetria - Binario Tech 
+ Data/Hora: Thu Oct 22 11:57:15 PM UTC 2026
+=======================================
+
+[1] Testando Rota Scania...
+{
+  "montadora": "Scania",
+  "modelo": "R450",
+  "status": "OK",
+  "conexao": true,
+  "velocidade_media": 82
+}
+
+[2] Testando Rota Mercedes-Benz...
+{
+  "montadora": "Mercedes-Benz",
+  "modelo": "Actros",
+  "status": "OK",
+  "conexao": true,
+  "velocidade_media": 78
+}
+
+[3] Testando Rota Volkswagen...
+{
+  "montadora": "Volkswagen",
+  "modelo": "Delivery",
+  "status": "ALERTA",
+  "conexao": false,
+  "velocidade_media": 0
+}
+
+----------------------------------
+Auditoria Finalizada com Sucesso!
