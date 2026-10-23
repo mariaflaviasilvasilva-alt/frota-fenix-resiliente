@@ -1,13 +1,43 @@
-=======================================
-Teste de Rotas - Binario Tech Core
- Data/Hora: Fri Oct 23 12:18:57 AM UTC 2026
-=======================================
+===== Teste CRUD - Fri Oct 23 01:14:19 AM UTC 2026 | http://localhost:5000/api/v1/veiculos =====
 
-[1] Testando Rota /status...
+--- POST: cadastrando veiculo ---
+{
+  "id": 4,
+  "placa": "IVC-1001",
+  "montadora": "Iveco",
+  "modelo": "Tector",
+  "status": "DISPONIVEL"
+}
+ID capturado: 4
 
-[2] Testando Rota /scania/info...
+--- PATCH: status do ID 4 ---
+{
+  "mensagem": "Status atualizado com sucesso!",
+  "veiculo": {
+    "id": 4,
+    "placa": "IVC-1001",
+    "montadora": "Iveco",
+    "modelo": "Tector",
+    "status": "EM_ROTA"
+  }
+}
 
-[3] Testando Rota /vw/info...
+--- PUT: substituindo ID 4 ---
+{
+  "mensagem": "Veiculo substituido com sucesso!",
+  "veiculo": {
+    "id": 4,
+    "placa": "IVC-9999",
+    "montadora": "Iveco",
+    "modelo": "Stralis",
+    "status": "DISPONIVEL"
+  }
+}
 
-----------------------------------
-Testes Finalizados com Sucesso!
+--- DELETE: removendo ID 4 ---
+{
+  "mensagem": "Veiculo ID 4 removido com sucesso."
+}
+
+--- GET: confirmando remocao (esperado 404) ---
+HTTP_STATUS: 404
